@@ -1,0 +1,11 @@
+pagenumber,category,isreviewable,dos,provider,referencekey,parentkey,lockstatus,header,facilitygroup,reviewerid,qcreviewerid,isduplicate
+1,24,TRUE,4/17/2019,ABC DoctorName - ABC Facility Name,120991,0,L,Laboratory Rept,,287,322,FALSE
+2,24,TRUE,4/17/2019,ABC DoctorName - ABC Facility Name,120992,120991,L,Laboratory Rept,,287,322,FALSE
+3,24,TRUE,4/17/2019,ABC DoctorName - ABC Facility Name,120993,120991,L,Laboratory Rept,,287,322,FALSE
+4,24,TRUE,4/17/2019,ABC DoctorName - ABC Facility Name,120994,120991,L,Laboratory Rept,,287,322,FALSE
+5,24,TRUE,4/17/2019,ABC DoctorName - ABC Facility Name,120995,120991,L,Laboratory Rept,,287,322,FALSE
+6,24,TRUE,4/17/2019,ABC DoctorName - ABC Facility Name,120996,120991,L,Laboratory Rept,,287,322,FALSE
+7,16,TRUE,5/1/2019,ABC DoctorName - ABC Facility Name,120997,0,L,Progress Note,,287,322,FALSE
+8,16,TRUE,5/1/2019,ABC DoctorName - ABC Facility Name,120998,120997,L,Progress Note,,287,322,FALSE
+9,16,TRUE,5/1/2019,ABC DoctorName - ABC Facility Name,120999,120997,L,Progress Note,,287,322,FALSE
+10,16,TRUE,5/1/2019,ABC DoctorName - ABC Facility Name,1209910,1209929,L,Progress Note,,287,322,FALSE

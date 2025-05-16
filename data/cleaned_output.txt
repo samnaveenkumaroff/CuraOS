@@ -1,0 +1,409 @@
+ABC FACILITY  ABC Name
+MRN: 123456789, DOB: 6/12/1982, Legal Sex: M
+Clinical Notes (continued)
+LIPOMA
+Note: Reassurance given. Patient declined to speak with Gen Surgery at this time. Return precautions given.
+Electronically signed by:
+ABC DOCTORNAME
+4/17/2019
+4:20 PM
+Electronically signed by ABC DoctorName (D.O.), D.O. at 4/17/2019  4:21 PM
+Labs
+LIPID PANEL [984580052] (Final result)
+Electronically signed by: ABC DoctorName (D.O.), D.O. on 04/17/19 1611  Status: Completed
+This order may be acted on in another encounter.
+Ordering user: ABC DoctorName (D.O.), D.O. 04/17/19 1611  Authorized by: ABC DoctorName (D.O.), D.O.
+Ordering mode: Standard
+Frequency: Routine  04/17/19 -  Class: Normal
+Quantity: 1  Lab status: Final result
+Diagnoses
+ROUTINE ADULT HEALTH CHECK UP EXAM [Z00.00]
+Provider Details
+Provider
+ABC DoctorName (D.O.), D.O.
+Specimen Information  NPI
+1932519733
+ID Type Source Collected By
+ABC220191080
+57919 — BLOOD Q591935 04/18/19 1532
+LIPID PANEL [984580052] (Abnormal)  Resulted: 04/19/19 1807, Result status: Final result
+Order status: Completed  Filed by: ABC Lab  04/19/19 1807 Collected by:
+QABCNUMBER 04/18/19 1532  Resulting lab: ABC REGIONAL REFERENCE
+LABORATORIES, CLINICAL PATHOLOGY - ABC HILLS
+Narrative:
+RMS ACCN:  ABCNumber
+FASTING? NO
+Acknowledged by: ABC DoctorName (M.D.), M.D.  on 04/19/19 1906
+Components
+Component
+CHOLESTEROL  Value
+161 Reference Range  Flag Lab
+<=199 mg/dL  — ABC
+HDL 43 >=40 mg/dL  — ABC
+LDL
+Comment: See LabNet for more information.  103 <=99 mg/dL  H ABC
+TRIGLYCERIDE, NONFASTING  113  <=149 mg/dL
+Comment:
+Nonfasting triglycerides (TG) are affected by both recent meals and patient
+metabolism. No reference range is established. However, nonfasting
+triglycerides >170 mg/dL are significantly elevated, and measurement of — ABC
+Note that if nonfasting TG are sufficiently high, then direct LDL (if TG>1300
+mg/dL) or HDL (if TG>2000 mg/dL) measurements may not be valid.
+
+ABC FACILITY  ABC Name
+MRN: 123456789, DOB: 6/12/1982, Legal Sex: M
+Labs (continued)
+Comment: NonHDL targets are 30 mg/dL higher than LDL targets.
+Testing Performed By
+Lab - Abbreviation  Name Director Address Valid Date Range
+1753 - ABC  ABC REGIONAL
+REFERENCE
+LABORATORIES,
+CLINICAL
+PATHOLOGY -
+ABC HILLS  Steven McLaren,
+DO 13000 Peyton Drive
+ABC HILLS CA
+91709 03/28/19 2201 - 02/21/24 0147
+Indications
+ROUTINE ADULT HEALTH CHECK UP EXAM [Z00.00 (ICD-10-CM)]
+Result Notes
+Older Notes
+Notes recorded by ABC DoctorName (M.D.), M.D. on 4/20/2019 at 7:45 AM PDT
+Results reviewed - Normal.
+All Reviewers List
+ABC DoctorName (M.D.), M.D. on 4/20/2019 07:45
+ABC DoctorName (M.D.), M.D. on 4/20/2019 07:45
+ABC DoctorName (M.D.), M.D. on 4/20/2019 07:30
+ABC DoctorName (M.D.), M.D. on 4/19/2019 19:06
+HEMOGLOBIN A1C, SCREENING OR PREDIABETIC MONITORING [984580054] (Final result)
+Electronically signed by: ABC DoctorName (D.O.), D.O. on 04/17/19 1611  Status: Completed
+This order may be acted on in another encounter.
+Ordering user: ABC DoctorName (D.O.), D.O. 04/17/19 1611  Authorized by: ABC DoctorName (D.O.), D.O.
+Ordering mode: Standard
+Frequency: Routine  04/17/19 -  Class: Normal
+Quantity: 1  Lab status: Final result
+Diagnoses
+ROUTINE ADULT HEALTH CHECK UP EXAM [Z00.00]
+Provider Details  Provider
+ABC DoctorName (D.O.), D.O.  NPI
+1932519733
+Specimen Information
+ID Type Source Collected By
+ABC220191080
+57918 — BLOOD QABCNUMBER 04/18/19 1532
+HEMOGLOBIN A1C, SCREENING OR PREDIABETIC
+MONITORING [984580054]  Resulted: 04/19/19 0718, Result status: Final
+result Order status: Completed  Filed by: ABC Lab  04/19/19 0718 Collected by:
+QABCNUMBER 04/18/19 1532  Resulting lab: ABC REGIONAL REFERENCE
+LABORATORIES, CLINICAL PATHOLOGY - ABC HILLS
+Narrative:
+RMS ACCN:  ABCNumber
+Acknowledged by: ABC DoctorName (M.D.), M.D.  on 04/19/19 1906
+Components
+Component  Value Reference Range  Flag Lab
+
+HGBA1C%
+Comment:  5.4 4.6 - 5.6 %  — ABC
+
+ABC FACILITY  ABC Name
+MRN: 123456789, DOB: 6/12/1982, Legal Sex: M
+Labs (continued)
+A repeatable HbA1c > or = 6.5% is diagnostic of diabetes. A single HbA1c > or =
+6.5% can also be confirmed by a fasting plasma glucose measurement > 125
+mg/dL, a random plasma glucose > or = 200 mg/dL, or a 2 hour oral glucose
+tolerance test result  > or = 200 mg/dL. Patients with HbA1c of 5.7-6.4% are at
+increased risk for future diabetes.
+Testing Performed By
+Lab - Abbreviation  Name Director Address Valid Date Range
+1753 - ABC  ABC REGIONAL
+REFERENCE
+LABORATORIES,
+CLINICAL
+PATHOLOGY -
+ABC HILLS  Steven McLaren,
+DO 13000 Peyton Drive
+ABC HILLS CA
+91709 03/28/19 2201 - 02/21/24 0147
+Indications
+ROUTINE ADULT HEALTH CHECK UP EXAM [Z00.00 (ICD-10-CM)]
+Result Notes
+Older Notes
+Notes recorded by ABC DoctorName (M.D.), M.D. on 4/20/2019 at 7:45 AM PDT
+Results reviewed - Normal.
+All Reviewers List
+ABC DoctorName (M.D.), M.D. on 4/20/2019 07:45
+ABC DoctorName (M.D.), M.D. on 4/20/2019 07:45
+ABC DoctorName (M.D.), M.D. on 4/20/2019 07:30
+ABC DoctorName (M.D.), M.D. on 4/19/2019 19:06
+TSH [987654321] (Final result)
+Electronically signed by: ABC DoctorName (D.O.), D.O. on 04/17/19 1611  Status: Completed
+This order may be acted on in another encounter.
+Ordering user: ABC DoctorName (D.O.), D.O. 04/17/19 1611  Authorized by: ABC DoctorName (D.O.), D.O.
+Ordering mode: Standard
+Frequency: Routine  04/17/19 -  Class: Normal
+Quantity: 1  Lab status: Final result
+Diagnoses
+ROUTINE ADULT HEALTH CHECK UP EXAM [Z00.00]
+Provider
+ABC DoctorName (D.O.), D.O.
+Specimen Information  NPI
+1932519733
+ID Type Source Collected By
+ABC220191080
+57920 — BLOOD QABCNUMBER 04/18/19 1532
+TSH [987654321]  Resulted: 04/19/19 2010, Result status: Final result
+Order status: Completed  Filed by: ABC Lab  04/19/19 2010 Collected by:
+QABCNUMBER 04/18/19 1532  Resulting lab: ABC REGIONAL REFERENCE
+LABORATORIES, CLINICAL PATHOLOGY - ABC HILLS
+Narrative:
+RMS ACCN:  ABCNumber
+Acknowledged by: ABC DoctorName (M.D.), M.D. on 04/20/19 0730
+
+ABC FACILITY  ABC Name
+MRN: 123456789, DOB: 6/12/1982, Legal Sex: M
+Labs (continued)
+Component  Value Reference Range  Flag Lab
+TSH 1.87 0.35 - 4.00
+mcIU/mL — ABC
+Testing Performed By
+Lab - Abbreviation  Name Director Address Valid Date Range
+1753 - ABC  ABC REGIONAL
+REFERENCE
+LABORATORIES,
+CLINICAL
+PATHOLOGY -
+ABC HILLS  Steven McLaren,
+DO 13000 Peyton Drive
+ABC HILLS CA
+91709 03/28/19 2201 - 02/21/24 0147
+Indications
+ROUTINE ADULT HEALTH CHECK UP EXAM [Z00.00 (ICD-10-CM)]
+Result Notes
+Older Notes
+Notes recorded by ABC DoctorName (M.D.), M.D. on 4/20/2019 at 7:45 AM PDT
+Results reviewed - Normal.
+All Reviewers List
+ABC DoctorName (M.D.), M.D. on 4/20/2019 07:45
+ABC DoctorName (M.D.), M.D. on 4/20/2019 07:45
+ABC DoctorName (M.D.), M.D. on 4/20/2019 07:30
+Other Orders
+Immunization/Injection
+VACC TDAP (ADACEL) [987654321] (Completed)
+Electronically signed by: ABC DoctorName (L.V.N.), L.V.N. on 04/17/19 1631  Status:
+Completed Ordering user: ABC DoctorName (L.V.N.), L.V.N. 04/17/19  Authorized by:
+ABC DoctorName (D.O.), D.O.
+1631
+Ordering mode: Standard
+Cosigning events
+Electronically cosigned by ABC DoctorName (D.O.), D.O. 04/17/19 1657 for Ordering
+Frequency: Routine  04/17/19 -  Class: Back Office
+Quantity: 1  Released by: ABC DoctorName (L.V.N.), L.V.N. 04/17/19
+1631
+Diagnoses
+VACCINATION FOR DIP HTHERIA, TETANUS AND ACELLULAR PERTUSSIS [Z23]
+Provider
+ABC DoctorName (L.V.N.), L.V.N.  NPI
+Order comments: Adacel (Tdap) vaccine, 0.5mL intramuscular (IM). For age 10+yrs.
+Indications
+VACCINATION FOR DIPHTHERIA, TETANUS AND ACELLULAR PERTUSSIS [Z23 (ICD-10-CM)]
+VACC INFLUENZA 4 YRS-ADULT (FLUCELVAX) QUADRIVALENT, PRES FREE, 0.5 ML IM [987654321] (Completed)
+Electronically signed by: ABC DoctorName (L.V.N.), L.V.N. on 04/17/19 1631  Status: Completed
+Ordering user: ABC DoctorName (L.V.N.), L.V.N. 04/17/19  Authorized by: ABC DoctorName (D.O.), D.O.
+1631
+
+ABC FACILITY  ABC Name
+MRN: 123456789, DOB: 6/12/1982, Legal Sex: M
+Clinical Notes (continued)
+Author: ABC DoctorName
+Filed: 5/1/2019  4:06 PM
+Status: Signed
+Wt Readings from Last 3 Encounters:
+05/01/19  182 lb 12.2 oz (82.9 kg)
+04/17/19  182 lb 15.7 oz (83 kg)  Service: — Author Type: LICENSED VOCATIONAL
+NURSE
+Encounter Date: 5/1/2019  Creation Time: 5/1/2019  4:05 PM
+Editor: ABC DoctorName (LICENSED VOCATIONAL NURSE)
+Chief Complaint
+Patient presents with
+• CONSULTATION
+• PHIMOSIS
+PROACTIVE CARE ACTIONS
+Proactive Office Encounter Actions: Pneumovax immunization declined
+Member given Patient Instructions on BMI/Weight Management
+The patient exercises 40 minutes per week at a moderate to strenuous level.
+Member instructed on KP.ORG registration process
+Carlos Hardik identified with Name and DOB.
+Allergies reviewed: Yes
+Medications reviewed: Yes
+Pharmacy Preference: Downey Medical Center - Downey Outpatient Pharmacy
+DMI: No
+ Staged: No
+Electronically signed by:
+ABC DOCTORNAME
+5/1/2019
+4:06 PM
+Electronically signed by ABC DoctorName at 5/1/2019  4:06 PM
+Progress Notes
+ABC DoctorName at 4/26/2019 0857
+Author: ABC DoctorName Filed:
+5/1/2019  4:23 PM
+Status: Signed Service: — Author Type: Physician
+Encounter Date: 5/1/2019  Creation Time: 4/26/2019  8:57 AM
+Editor: ABC DoctorName (Physician)
+
+ABC FACILITY  ABC Name
+MRN: 123456789, DOB: 6/12/1982, Legal Sex: M
+Clinical Notes (continued)
+Urology Progress Note
+RFC: Carlos Hardik is a 38 year old male with phimosis and interfering with sex life and urination.
+Carlos Hardik is a 38 year old male  with obesity here for phimosis.
+Subjective:
+Unable to pull foreskin back to reveal glans
+Bothersome during intercourse and desires treatment
+Vitals:
+General appearance: alert, well appearing, and in no distress.
+no tachypnea, retractions or cyanosis
+Abdominal exam: soft, nontender, nondistended, no masses or organomegaly.
+GU: uncircumcised, glans/meatus wnl, testicles descended x2, epididymis and cord structures wnl
+bilaterally, no inguinal hernia noted
+Tight distal phimotic foreskin about 8mm in aperture, unable to reveal glans
+No results found for this basename:  WBC, HGB, HCT, PLT
+No results found for this basename:  CR
+HGBA1C      5.4   04/18/2019
+ASSESSMENT/PLAN:
+N47.1 PHIMOSIS
+Option of steroid cream vs. Circumcision discussed
+Circumcision is removal of entire foreskin.  I have explained this clearly with demonstration of either
+diagram, self-drawn picture, or on pt's own penis at about 5th grade level so that it is clearly understood.
+Risks, benefits, and alternatives of the surgery were discussed in detail with the patient. These include, but
+are not limited to, bleeding, infection; anesthetic complications- DVT, PE, MI, and even death; injury to
+surrounding organs, including injury to the GU tract. The risk of perceived shortening of the penis, increased
+sensitivity, numbness, scarring, pain, and skin bridges were discussed specifically for circumcision surgery.
+Possibility of reoperation was also discussed with the pt.
+There is extensive variability in the appearance of mens genitals and there is NO guarantee that he will be
+satisfied with the appearance. There can be variability in how loose or tight the shaft skin will be after
+circumcision and there is some subjectivity with regard to what is desirable. I can not guarantee he will be
+happy with this. With the glans more exposed, there may be changes in the sensitivity which may alter
+
+ABC FACILITY  ABC Name
+MRN: 123456789, DOB: 6/12/1982, Legal Sex: M
+Clinical Notes (continued)
+sexual function to some extent. Patient also know that the procedure will NOT lengthen the penis and will
+NOT enhance erectile function
+Informed consent was obtained after the pt's questions were answered.
+Adequate time was given to patient to ask questions and all questions were answered.
+Pt expressed understanding.
+Pt at this time elects for trial of betamethasone cream x 6 weeks If fail,
+he will elect for circumcision as discussed above
+TAV in 6 weeks
+-------------------------
+This note is electronically signed by:
+ABC DoctorName
+ABC Facility Downey Medical Center
+Department of Urology
+5/1/2019
+4:22 PM
+Electronically signed by ABC DoctorName at 5/1/2019  4:23 PM
+Other Orders
+Medications
+Betamethasone Dipropionate Aug (DIPROLENE AF) 0.05 % Top Crea [2184109482] (Expired)
+Electronically signed by: ABC DoctorName on 05/01/19 1619
+Ordering user: ABC DoctorName 05/01/19 1619  Authorized by: ABC DoctorName
+Ordering mode: Standard
+Frequency: Routine  05/01/19 - 04/30/21 2359  Class: Fill Now
+Diagnoses
+PHIMOSIS [N47.1]
+Provider Details  Status: Expired
+Provider
+ABC DoctorName  NPI
+1669765657
+Questionnaire
+Question
+Is this medication for a workers' compensation condition?  Answer
+No
+Indications
+PHIMOSIS [N47.1 (ICD-10-CM)]
+Patient Instructions
+Apply betamethasone cream to the affected area daily.  Retract the foreskin as far as it will go and massage
+Printed on 2/7/25  7:46 AM  Page 30
+
+ABC FACILITY  ABC Name
+MRN: 123456789, DOB: 6/12/1982, Legal Sex: M
+Patient Instructions (continued)
+the cream into the area where the skin is tight for 1 minute at a time.  After 1 week, begin to pull the skin
+back with more force without causing pain and massage the cream into the tight area.  You should do a total
+of 3 weeks
+TAV in 6 weeks
+Thank you for visiting Downey Urology Department. We hope that you had a pleasant visit.
+If your visit was less than excellent, we welcome your feedback. Feel free to contact Leonora Llantero,
+Department Administrator, at 562-657-4323 or via email at Leonora.X.LLantero@kp.org.
+Additionally, we appreciate your participation in completing any surveys mailed to you regarding your recent
+visit. This enables us to continually improve the quality of care and service that we provide to you. Thank you
+for choosing ABC Facility as your healthcare provider.
+Future appointments, please call (562)657-4545
+STAY HEALTHY. BE WELL. AND THRIVE
+Please stop by our Check-out Window so that you may be appropriately scheduled for your
+recommendation(s) towards a healthier lifestyle.
+Thank you
+JENNIFER ONYIA
+LVN
+KP.ORG is a great way to access most of your lab test results, and to contact the office of your Primary Care
+Physician or another provider with whom you have had contact in the past 13 months.
+Secure Messaging Information:
+-Information is secure
+-Users log in using a password they create
+Your BMI (Body Mass Index) is above the recommended value. BMI for adults relates to health risks including
+cardiovascular disease, hypertension, and type 2 diabetes.
+Please call 562-622-4150 to schedule a class for Adult Weight Loss and/or call Weight Watchers at 1-866-639-3300
+(toll free). ABC Facility has collaborated with Weight Watchers to bring our members exciting new weight
+management options at a discount.
+You are due for your Pneumonia Shot. This shot protects you from a common type of Pneumonia.  For some chronic
+conditions (like Diabetes), the Pneumonia Shot is recommended before age 65 and again after age 65. If you have not
+had your Pneumonia Shot, please go to your Primary Care Phyciain's office today for a Nurse Visit.
+Electronically signed by ABC DoctorName at 5/1/2019  4:19 PM
+END OF ENCOUNTER
+Printed on 2/7/25  7:46 AM  Page 31
+
+ABC FACILITY  ABC Name  MRN: 123456789, DOB: 6/12/1982,
+Legal Sex: M
+_
+05/06/2019 - Telephone in UROLOGY SUITE 231
+Visit Information
+Nursing Assessment
+No Nursing Assessment available for this encounter.
+Questionnaires
+INTERPRETER LANGUAGE ASSIST SCAL
+2. BY PHONE - KP Physician/QBS2 Staff  FLORES, DOLORES [D566673]
+Edited by Espinoza, Paulina (L.V.N.), L.V.N.
+Edited on 5/7/2019  9:04 AM
+Edited by Espinoza, Paulina (L.V.N.), L.V.N.
+Edited on 5/7/2019  9:04 AM
+Patient's preferred spoken language. ONLY edit if the patient Spanish [96]
+Communication Tracking
+Calls/Messages
+Phone (Incoming) on 5/6/2019 1615
+Caller name: Hardik, Carlos  Relation: Self Phone number: 987654321 (H)
+Phone (Outgoing) on 5/6/2019 1647
+Caller name: Hardik, Carlos  Relation: Self Phone number: 987654321 (H)
+Phone (Outgoing) on 5/7/2019 0903
+Caller name: Hardik, Carlos  Relation: Self Phone number: 987654321 (H)
+Reason for Visit
+Chief Complaints
+
+ OTHER, onset date 5/6/2019
+SURGERY SCHEDULING, onset date 5/6/2019
+Clinical Notes
+Telephone Encounter
+Blas, Patricia at 5/6/2019 1614
+Author: Blas, Patricia
+Filed: 5/6/2019  4:23 PM
+Status: Signed Service: —
+Encounter Date:
+5/6/2019 Editor: Blas,
+Patricia Author Type: —
+Creation Time: 5/6/2019  4:14 PM
+Caller is requesting surgery for circumcision
+Contacts
+Type Contact Phone
+05/06/2019 04:15 PM  Phone (Incoming)  ABC Name(Self)  987654321 (H)
