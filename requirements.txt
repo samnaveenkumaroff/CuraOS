@@ -1,0 +1,56 @@
+# Core Python Libraries
+numpy
+pandas
+scikit-learn
+scipy
+
+# Deep Learning (CPU only)
+torch
+torchvision
+torchaudio
+transformers
+sentence-transformers
+
+# PDF and OCR
+pymupdf
+pdfplumber
+pytesseract
+opencv-python
+
+# NLP and NER
+spacy
+scispacy
+spacy-transformers
+
+# Date Parsing and String Matching
+dateparser
+fuzzywuzzy
+python-Levenshtein
+
+# Visualization (Optional)
+matplotlib
+seaborn
+streamlit
+gradio
+
+# Clustering and Similarity
+hdbscan
+faiss-cpu
+
+# API Layer
+fastapi
+uvicorn
+
+# PDF & Word Generation
+pdfkit
+reportlab
+
+# Logging and Monitoring
+loguru
+
+# Experiment Tracking (Optional)
+wandb
+
+# Extras
+tqdm
+pyyaml
