@@ -5,7 +5,7 @@
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](/LICENSE)  
 [![Build Status](https://img.shields.io/badge/build-passing-brightgreen.svg)](#)
 
-A fully modular, AI-powered pipeline that automates the segmentation, de-identification, and clustering of unstructured multi-page medical records into organized electronic health records (EHRs). CuraOS streamlines the transformation of diverse clinical documents into structured, actionable formats—ensuring data privacy, HIPAA compliance, and adaptability to any healthcare environment.
+CuraOS is a fully modular, AI-powered pipeline that automates the transformation of unstructured multi-page medical records (PDFs, scanned documents) into structured and actionable electronic health records (EHRs). The system handles every aspect of preprocessing, including segmentation, clustering, de-identification, metadata extraction, and interactive visualization.
 
 ---
 
@@ -18,10 +18,8 @@ A fully modular, AI-powered pipeline that automates the segmentation, de-identif
 5. [Competitive Landscape](#5-competitive-landscape)  
 6. [Adoption Insights](#6-adoption-insights)  
 7. [Architecture](#7-architecture)  
-   - [7.1 Architecture Diagram](#71-architecture-diagram)  
-   - [7.2 Workflow Diagram](#72-workflow-diagram)  
-8. [Pipeline Components](#8-pipeline-components)  
-9. [Installation](#9-installation)  
+8. [Installation](#8-installation)  
+9. [Pipeline Components](#9-pipeline-components)  
 10. [Setup Scripts](#10-setup-scripts)  
 11. [Usage](#11-usage)  
 12. [How CuraOS Excels](#12-how-curaos-excels)  
@@ -33,43 +31,35 @@ A fully modular, AI-powered pipeline that automates the segmentation, de-identif
 
 ## 1. Summary
 
-CuraOS is an AI-driven, modular pipeline that converts unstructured medical PDFs and scanned images into structured EHRs. It automates:
-
-- **Segmentation & Clustering** of related pages  
-- **De-identification** (automatic PHI redaction)  
-- **Metadata Extraction** (dates, providers, facilities)  
-- **Visualization & Export** (CSV, JSON, FHIR, dashboards)  
-
-Designed for on-premise or cloud deployment, CuraOS is lightweight, API-driven, and easily extensible to regional languages.
+CuraOS is a healthcare data pipeline that takes raw, unstructured clinical documents and converts them into clean, structured, de-identified records with enhanced metadata—enabling advanced analytics, research, and integration with hospital systems.
 
 ---
 
 ## 2. Introduction
 
-Electronic Health Records (EHRs) have transformed patient care by digitizing data. Yet, most clinical documents remain locked in unstructured PDFs or scanned images—hindering analytics, research, and interoperability under HIPAA regulations. CuraOS addresses this gap by providing page-level AI tools to ingest, clean, extract, cluster, and export medical records.
+Electronic Health Records are foundational to modern healthcare—but much of a patient's history remains buried in unstructured documents. CuraOS helps organizations convert paper-based or scanned records into usable, analyzable formats—without compromising data security or compliance.
 
 ---
 
 ## 3. Problem Statement
 
-- **Fragmented Records**: Clinical data spread across multiple pages and document types.  
-- **Manual Overhead**: Time-consuming, error-prone manual processing.  
-- **Regulatory Pressure**: Need for automated HIPAA-compliant de-identification.  
-- **Lack of Granularity**: Existing EHR systems process documents as monoliths, not page by page.
+- **Data trapped in PDFs and scans**
+- **Manual data entry is costly and error-prone**
+- **Lack of compliance without proper de-identification**
+- **Standard tools don’t support page-level granularity**
 
 ---
 
 ## 4. Key Features
 
-- 🔒 **Data Privacy & De-identification**  
-- 📄 **PDF & OCR Processing** with header/footer cleanup  
-- 🧬 **Entity Extraction** (dates, providers, facilities, lab tests, medical terms)  
-- 📊 **Interactive Dashboard** (timeline, entity summary, analytics)  
-- 🔗 **Page-wise Clustering** via HDBSCAN + S-BERT embeddings  
-- 🔄 **Carry-Forward Logic** to fill missing metadata  
-- 💾 **Multi-format Exports** (CSV, JSON, FHIR, cleaned PDF, cleaned text)  
-- ⚙️ **Modular Design** for easy swapping of OCR, NER, clustering components  
-- 🌐 **Platform Independent**: Windows, macOS, Linux, Docker  
+- ✅ HIPAA-compliant PHI de-identification  
+- 🧠 Entity extraction: Dates, doctors, labs, conditions  
+- 📑 Page-wise semantic clustering using HDBSCAN + embeddings  
+- 📈 Timeline generation for easy record navigation  
+- 🖼️ Interactive dashboards for data visualization  
+- 🧰 Export options: CSV, JSON, FHIR, PDFs, cleaned text  
+- 🔌 Modular design to integrate custom OCR/NLP tools  
+- 🌐 Supports English and regional languages  
 
 ---
 
@@ -86,91 +76,140 @@ Electronic Health Records (EHRs) have transformed patient care by digitizing dat
 
 ## 6. Adoption Insights
 
-- **U.S. Leaders**: Epic, Oracle Health, Meditech, NextGen  
-- **Indian Innovators**: Eka Care, HealthPlix, Docpulse, Healthray, Jio KiviHealth  
-- **Opportunity**: CuraOS enhances existing platforms by adding fine-grained, AI-driven document clustering and de-identification—critical for cost-sensitive and diverse healthcare settings.
+CuraOS can be adopted by:
+
+- 📊 **Hospitals & Clinics** for digitizing historical patient records  
+- 🏥 **EHR Platforms** (Epic, HealthPlix, Jio Health, etc.) for document enrichment  
+- 🔬 **Research Labs** that require clean, anonymized medical data  
+- 🧪 **Pharma/Insurance** companies for large-scale data extraction & compliance  
 
 ---
 
 ## 7. Architecture
 
-```text
-┌────────┐    ┌───────────┐    ┌─────────────────┐    ┌─────────────────────┐    ┌───────┐
-│ Input  │───▶│ Preprocess│───▶│ Entity Extraction│───▶│ Data Aggregation &  │───▶│ Export │
-│ (PDF/JSON)  │   │ (OCR,     │   │ (spaCy & Regex)  │   │ Visualization       │   │       │
-│             │   │ clean-up) │   └─────────────────┘   │ (timelines, charts) │   │       │
-└────────┘    └───────────┘                         └─────────────────────┘    └───────┘
-````
+### 7.1 High-Level Architecture
 
-### 7.1 Architecture Diagram
+![Architecture](https://github.com/user-attachments/assets/c2069e2d-6542-403e-b390-e486be0ea5ab)
 
-Below is a high-level visual representation of CuraOS’s modular architecture, showing how data flows through each block from ingestion to export.
+**Modules:**
 
-![Architecture Diagram](https://github.com/user-attachments/assets/c2069e2d-6542-403e-b390-e486be0ea5ab)
+1. **Input Handler**  
+   - Accepts PDFs, scanned images, or JSONs.  
+
+2. **Preprocessing**  
+   - Header/footer removal  
+   - OCR if scanned  
+
+3. **Entity Extraction**  
+   - Using spaCy and regex patterns  
+
+4. **De-identification**  
+   - Redacts PHI like names, MRNs, phone numbers  
+
+5. **Feature Engineering + Clustering**  
+   - Embeddings (S-BERT / MiniLM)  
+   - Clustering using HDBSCAN  
+
+6. **Timeline & Visualization**  
+   - Interactive dashboard with analytics  
+
+7. **Multi-format Export**  
+   - Cleaned files in multiple formats  
+
+---
 
 ### 7.2 Workflow Diagram
 
-This diagram illustrates the end-to-end workflow: from uploading raw medical documents, through preprocessing, entity extraction, clustering, and finally to multi-format export and visualization.
+![Workflow](https://github.com/user-attachments/assets/79465b2f-2c50-4515-9288-70e215692e03)
 
-![Workflow Diagram](https://github.com/user-attachments/assets/79465b2f-2c50-4515-9288-70e215692e03)
+**Process Flow:**
 
----
-
-## 8. Pipeline Components
-
-1. **Data Ingestion**
-
-   * Bulk upload via Web UI or API
-2. **Preprocessing & De-identification**
-
-   * PDF parsing, OCR (scanned images), header/footer removal
-   * PHI redaction for HIPAA compliance
-3. **Feature Engineering & Clustering**
-
-   * Metadata extraction (dates, providers, facilities)
-   * Semantic embeddings (SciBERT or MiniLM)
-   * Density-based clustering (HDBSCAN) with auto-labeling
-4. **Aggregation & Visualization**
-
-   * Timeline view, entity summary, analytics charts (Plotly)
-5. **Export**
-
-   * Cleaned text (.txt), sanitized PDF (.pdf)
-   * CSV exports: simple, detailed, filtered, timeline, lab tests
-   * JSON & FHIR outputs for EHR interoperability
+- Users upload bulk documents  
+- Files are preprocessed (OCR + cleanup)  
+- Metadata and entities are extracted  
+- Pages are clustered into logical documents  
+- PHI is redacted and visualization generated  
+- Exports are generated for downstream use  
 
 ---
 
-## 9. Installation
+## 8. Installation
 
 ### Prerequisites
 
-* Python 3.9+
-* [Conda](https://docs.conda.io/) (optional, but recommended)
+- Python 3.9  
+- Git  
+- Conda (recommended) or virtualenv  
+- Compatible with Linux, macOS, and Windows  
 
-### 1. Clone the Repository
+### Clone Repository
 
 ```bash
 git clone https://github.com/yourusername/CuraOS.git
 cd CuraOS
-```
+````
 
-### 2. Create & Activate Environment
+### Create Virtual Environment
 
-**Conda** (recommended):
+**Using Conda (Recommended):**
 
 ```bash
 conda create -y -n curaos_env python=3.9
 conda activate curaos_env
 ```
 
-**Or** virtualenv:
+**Using virtualenv (Alternative):**
 
 ```bash
 python -m venv venv
-source venv/bin/activate   # macOS/Linux
-venv\Scripts\activate      # Windows
+source venv/bin/activate   # On macOS/Linux
+venv\Scripts\activate      # On Windows
 ```
+
+### Install Dependencies
+
+```bash
+pip install --upgrade pip
+pip install -r requirements.txt
+python -m spacy download en_core_web_sm
+```
+
+---
+
+## 9. Pipeline Components
+
+1. **Document Ingestion**
+
+   * Upload via UI or API
+   * Accepts PDFs, scanned TIFFs, and JSON
+
+2. **Preprocessing**
+
+   * Text cleanup, OCR via Tesseract
+   * Removes headers, footers, duplicates
+
+3. **De-identification**
+
+   * Custom rules + regex to mask PHI
+
+4. **Entity Extraction**
+
+   * Dates, provider names, locations, labs
+
+5. **Clustering**
+
+   * Page embeddings via SciBERT or MiniLM
+   * HDBSCAN for document-level grouping
+
+6. **Timeline & Summary Generation**
+
+   * Per-patient history timeline
+   * Entity summary and distribution charts
+
+7. **Export & Integration**
+
+   * Formats: CSV, PDF, TXT, FHIR JSON
+   * Easily integrable with existing systems
 
 ---
 
@@ -194,19 +233,8 @@ pip install -r requirements.txt
 echo "❯ Downloading spaCy model..."
 python -m spacy download en_core_web_sm
 
-echo "✅ Setup complete. Run 'conda activate curaos_env' to begin."
-```
-
-Make it executable:
-
-```bash
-chmod +x setup.sh
-```
-
-Run:
-
-```bash
-./setup.sh
+echo "✅ Setup complete. Run the app with:"
+echo "streamlit run path/app_pdf_csv.py"
 ```
 
 ---
@@ -228,88 +256,78 @@ pip install -r requirements.txt
 echo ❯ Downloading spaCy model...
 python -m spacy download en_core_web_sm
 
-echo ✅ Setup complete. Run 'conda activate curaos_env' to begin.
+echo ✅ Setup complete. Run the app with:
+echo streamlit run path/app_pdf_csv.py
 pause
-```
-
-Double-click or run:
-
-```cmd
-setup.bat
 ```
 
 ---
 
 ## 11. Usage
 
-After setup and activation:
+After installation and environment activation:
+
+### 1. Launch the Streamlit Dashboard
 
 ```bash
-# Run the Streamlit dashboard
-streamlit run app.py
-
-# Or run full pipeline via CLI (if provided)
-python run_pipeline.py --input path/to/your/file.pdf --output-dir ./results
+streamlit run path/app_pdf_csv.py
 ```
 
-Explore interactive tabs:
+Explore:
 
-* Timeline
-* Page View
-* Entity Summary
-* Entity Analytics
-* CSV & PDF Exports
+* 📆 Patient Timeline
+* 📄 Page View for clustered documents
+* 🧠 Entity Summary & Statistics
+* 📤 Export Cleaned Files
+
+### 2. CLI Option (if implemented)
+
+```bash
+python run_pipeline.py --input ./data/sample.pdf --output-dir ./results
+```
 
 ---
 
 ## 12. How CuraOS Excels
 
-* **Page-wise Granularity**: Finer organization than whole-document approaches
-* **Modular NLP Pipeline**: Swap OCR, NER, clustering components easily
-* **Adaptability**: On-premise deployment; supports regional languages
-* **Open & Extensible**: API-driven; integrate with any EHR or research tool
-* **Output Flexibility**: JSON, CSV, FHIR, PDF, Text & dashboards
+* ✅ Granular page-wise segmentation
+* 🧩 Modular NLP engine
+* 🔐 Built-in de-identification
+* 🖼️ Visual analytics for rapid insight
+* 🔄 Export-ready formats for EHR integration
 
 ---
 
 ## 13. Output Formats
 
-* **Cleaned Text** (`.txt`)
-* **Sanitized PDF** (`.pdf`)
-* **CSV Exports**:
-
-  * Simple
-  * Detailed
-  * Filtered
-  * Timeline
-  * Lab Tests
-* **JSON & FHIR** for EHR interoperability
-* **Interactive Dashboards** (Streamlit + Plotly)
+* `.txt`: Cleaned text
+* `.pdf`: Sanitized, de-identified PDFs
+* `.csv`: Structured data tables
+* `.json`: Raw and enriched data
+* `.fhir.json`: Compatible with healthcare standards
+* `.html`: Embedded dashboards
 
 ---
 
 ## 14. Contributing
 
-Contributions welcome! Please:
+Contributions are welcome!
 
-1. Fork the repo
-2. Create a feature branch (`git checkout -b feature/YourFeature`)
-3. Commit your changes (`git commit -m "Add YourFeature"`
-4. Push to your branch (`git push origin feature/YourFeature`)
+1. Fork this repo
+2. Create your branch (`git checkout -b feature/YourFeature`)
+3. Commit changes (`git commit -m "Feature: YourFeature"`)
+4. Push (`git push origin feature/YourFeature`)
 5. Open a Pull Request
-
-See [CONTRIBUTING.md](CONTRIBUTING.md) for details.
 
 ---
 
 ## 15. License
 
-This project is licensed under the **MIT License**. See [LICENSE](LICENSE) for details.
+This project is licensed under the [MIT License](LICENSE).
 
 ---
 
-**Enjoy CuraOS!**
-Transform your unstructured medical records into actionable EHR data—securely, reliably, and at scale.
+**CuraOS — From Paper to Patient Insight.**
 
 ```
 ```
