@@ -1,4 +1,4 @@
-````markdown
+
 # CuraOS
 
 [![Python Version](https://img.shields.io/badge/python–3.9–blue.svg)](https://www.python.org/)  
@@ -329,5 +329,3 @@ This project is licensed under the [MIT License](LICENSE).
 
 **CuraOS — From Paper to Patient Insight.**
 
-```
-```
