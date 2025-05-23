@@ -5,9 +5,12 @@
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](/LICENSE)  
 [![Build Status](https://img.shields.io/badge/build-passing-brightgreen.svg)](#)
 
-CuraOS is a fully modular, AI-powered pipeline that automates the transformation of unstructured multi-page medical records (PDFs, scanned documents) into structured and actionable electronic health records (EHRs). The system handles every aspect of preprocessing, including segmentation, clustering, de-identification, metadata extraction, and interactive visualization.
 
+![CuraOS](https://github.com/user-attachments/assets/37917554-6c92-4177-b9d8-b90f28958444)
+
+CuraOS is a fully modular, AI-powered pipeline that automates the transformation of unstructured multi-page medical records (PDFs, scanned documents) into structured and actionable electronic health records (EHRs). The system handles every aspect of preprocessing, including segmentation, clustering, de-identification, metadata extraction, and interactive visualization.
 ---
+
 
 ## 📋 Table of Contents
 
