@@ -149,7 +149,7 @@ CuraOS can be adopted by:
 ### Clone Repository
 
 ```bash
-git clone https://github.com/yourusername/CuraOS.git
+git clone https://github.com/samnaveenkumaroff/CuraOS.git
 cd CuraOS
 ````
 
