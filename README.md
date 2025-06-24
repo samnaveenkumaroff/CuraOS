@@ -328,6 +328,8 @@ Contributions are welcome!
 ## 15. License
 
 This project is licensed under the [MIT License](LICENSE).
+Made with Love by Sam Naveenkumar V
+([samnaveenkumaroff](https://in.linkedin.com/in/samnaveenkumaroff))
 
 ---
 
