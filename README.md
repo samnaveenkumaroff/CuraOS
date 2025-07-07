@@ -45,7 +45,7 @@ Electronic Health Records are foundational to modern healthcare—but much of a 
 
 ---
 
-## 3. Problem Statement
+## 3. Problem Statements Tackled
 
 - **Data trapped in PDFs and scans**
 - **Manual data entry is costly and error-prone**
