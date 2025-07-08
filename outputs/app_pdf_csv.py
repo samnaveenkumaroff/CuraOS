@@ -10,6 +10,8 @@ import io
 from datetime import datetime, timedelta
 from fpdf import FPDF
 
+#Csv Configs
+
 # Configure environment
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
 os.environ['CUDA_VISIBLE_DEVICES'] = '-1'
