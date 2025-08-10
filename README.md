@@ -10,6 +10,7 @@
 
 CuraOS is a fully modular, AI-powered pipeline that automates the transformation of unstructured multi-page medical records (PDFs, scanned documents) into structured and actionable electronic health records (EHRs). The system handles every aspect of preprocessing, including segmentation, clustering, de-identification, metadata extraction, and interactive visualization. CuraOS
 
+
 ---
 
 
