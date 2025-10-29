@@ -12,7 +12,6 @@ CuraOS is a fully modular, AI-powered pipeline that automates the transformation
 
 ---
 
-
 ## 📋 Table of Contents
 
 1. [Summary](#1-summary)  
