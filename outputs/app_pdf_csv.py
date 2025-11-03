@@ -10,7 +10,7 @@ import io
 from datetime import datetime, timedelta
 from fpdf import FPDF
 
-#Csv Configs
+#Csv Config
 
 # Configure environment
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
@@ -749,3 +749,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
